@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-Explore | Discover Events</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script src="../JAVASCRIPT/index.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="./index.html" class="logo">K-EXPLORE.</a>
+
+        <button class="menu-toggle" id="menuToggle" type="button">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <a href="./index.html">Home</a>
+          <a href="./Events.html">Explore Events</a>
+          <a href="./About.html">About</a>
+          <a href="./help.html">Help</a>
+          <a href="./my-registrations.html">My Registrations</a>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle">☾</button>
+          <a href="./Login.html" class="btn btn-small">Login</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div>
+            <span class="event-tag">YOUR EVENT DESTINATION</span>
+            <h1>Discover Events.<br /><span>Create Memories.</span></h1>
+            <p>
+              Find exciting events, connect with people and experience
+              unforgettable moments with K Explore.
+            </p>
+            <a href="./Events.html" class="btn">Explore Events →</a>
+          </div>
+
+          <div>
+            <img
+              class="hero-photo"
+              src="../images/hero.jpg"
+              alt="People enjoying an event"
+              onerror="
+                this.src =
+                  'https://placehold.co/700x500/eee7ff/5632a5?text=Discover+Events'
+              "
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Discover Experiences</h2>
+              <p>Explore events that match your interests.</p>
+            </div>
+            <a href="./Events.html" class="btn btn-outline">View All Events</a>
+          </div>
+
+          <div class="event-grid" id="eventContainer"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container content-card">
+          <h2>Be Part of Something Exciting</h2>
+          <p class="muted">
+            Discover new opportunities, meet interesting people and make every
+            experience memorable.
+          </p>
+          <br />
+          <a href="./Events.html" class="btn">Find Your Next Event</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <a href="./index.html" class="logo" style="color: white"
+            >K EXPLORE.</a
+          >
+          <p>Discover. Connect. Experience.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="./Events.html">Events</a>
+          <a href="./About.html">About</a>
+          <a href="./help.html">Help</a>
+        </div>
+
+        <p>© 2026 K Explore. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

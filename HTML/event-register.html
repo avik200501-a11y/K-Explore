@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration | K Explore</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">K Explore</a>
+
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="Events.html">Events</a>
+        <a href="my-registrations.html">My Registrations</a>
+        <a href="Login.html">Sign In</a>
+        <button id="logoutButton">Logout</button>
+    </div>
+
+    <button id="menuToggle">☰</button>
+</nav>
+
+<main class="auth-container">
+    <div class="form-card">
+        <h1>Event Registration</h1>
+        <p>Complete your details to participate in an event.</p>
+
+        <form id="registrationForm">
+            <label for="registrationName">Full Name</label>
+            <input
+                type="text"
+                id="registrationName"
+                placeholder="Your registered name"
+                required
+                readonly
+            >
+
+            <label for="registrationEmail">Email Address</label>
+            <input
+                type="email"
+                id="registrationEmail"
+                placeholder="Your registered email"
+                required
+                readonly
+            >
+
+            <label for="registrationPhone">Phone Number</label>
+            <input
+                type="tel"
+                id="registrationPhone"
+                placeholder="Enter your 10-digit phone number"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                required
+            >
+
+            <label for="eventSelect">Select Event</label>
+            <select id="eventSelect" required>
+                <option value="">Select an event</option>
+            </select>
+
+            <button type="submit" class="btn">
+                Register Now
+            </button>
+
+            <p id="formMessage"></p>
+        </form>
+    </div>
+</main>
+
+<script src="../JAVASCRIPT/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Verification | K Explore</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <main class="auth-container">
+      <div class="form-card">
+        <h1>OTP Verification</h1>
+        <p>OTP verification is temporarily disabled.</p>
+
+        <form id="otpForm">
+          <label for="otp">Verification Code</label>
+          <input
+            type="text"
+            id="otp"
+            placeholder="Enter verification code"
+            maxlength="6"
+            inputmode="numeric"
+          />
+
+          <button type="submit" class="btn">Verify OTP</button>
+
+          <p id="otpMessage"></p>
+        </form>
+
+        <a href="Login.html">Return to Sign In</a>
+      </div>
+    </main>
+
+    <script src="../JAVASCRIPT/index.js"></script>
+  </body>
+</html>
